@@ -3,19 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amur Leopard · WILDSAFE</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>WILDSAFE · Endangered Species</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Additional gallery styles */
-        .gallery-grid {
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        }
-        .gallery-grid img {
-            height: 180px;
-            border-radius: 12px;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -24,101 +14,139 @@
                 <i class="fas fa-paw"></i> WILDSAFE
             </div>
             <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#species">Species</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#species">Species</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </div>
     </nav>
 
-    <main class="species-detail">
-        <a href="../index.html#species" class="back-link"><i class="fas fa-arrow-left"></i> Back to all species</a>
-        
-        <div class="detail-header">
-            <div class="header-image">
-                <img src="https://images.pexels.com/photos/751686/pexels-photo-751686.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Amur Leopard">
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Protect Our <span>Vanishing Wildlife</span></h1>
+            <p>Over 42,100 species are threatened with extinction. Meet them, learn their stories, and discover how you can help.</p>
+        </div>
+    </section>
+
+    <section id="species" class="species-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured <span>Endangered Species</span></h2>
+                <p>Click on any animal to see detailed photos and conservation information</p>
             </div>
-            <div class="header-info">
-                <h1>Amur Leopard</h1>
-                <p class="sci-name">Panthera pardus orientalis</p>
-                <span class="status-badge crit">CRITICALLY ENDANGERED</span>
-                
-                <div class="info-grid">
-                    <div class="info-item">
-                        <span class="label">Population</span>
-                        <span class="value">100+</span>
+
+            <div class="species-grid">
+                <!-- Amur Leopard -->
+                <a href="species/amur-leopard.html" class="species-card">
+                    <div class="card-image">
+                        <img src="https://cdn.pixabay.com/photo/2017/02/07/16/47/amur-leopard-2046432_1280.jpg" alt="Amur Leopard">
+                        <span class="status crit">CR</span>
                     </div>
-                    <div class="info-item">
-                        <span class="label">Trend</span>
-                        <span class="value">⬆️ Increasing</span>
+                    <div class="card-info">
+                        <h3>Amur Leopard</h3>
+                        <p class="sci-name">Panthera pardus orientalis</p>
+                        <p class="population"><i class="fas fa-users"></i> 100+ remaining</p>
                     </div>
-                    <div class="info-item">
-                        <span class="label">Region</span>
-                        <span class="value">Russian Far East</span>
+                </a>
+
+                <!-- Mountain Gorilla -->
+                <a href="species/mountain-gorilla.html" class="species-card">
+                    <div class="card-image">
+                        <img src="https://cdn.pixabay.com/photo/2015/09/26/09/41/gorilla-958398_1280.jpg" alt="Mountain Gorilla">
+                        <span class="status en">EN</span>
                     </div>
-                    <div class="info-item">
-                        <span class="label">Habitat</span>
-                        <span class="value">Temperate forests</span>
+                    <div class="card-info">
+                        <h3>Mountain Gorilla</h3>
+                        <p class="sci-name">Gorilla beringei beringei</p>
+                        <p class="population"><i class="fas fa-users"></i> 1,063 remaining</p>
                     </div>
-                </div>
+                </a>
+
+                <!-- Sumatran Elephant -->
+                <a href="species/sumatran-elephant.html" class="species-card">
+                    <div class="card-image">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/23/15/27/elephant-1853434_1280.jpg" alt="Sumatran Elephant">
+                        <span class="status crit">CR</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Sumatran Elephant</h3>
+                        <p class="sci-name">Elephas maximus sumatranus</p>
+                        <p class="population"><i class="fas fa-users"></i> 2,400 remaining</p>
+                    </div>
+                </a>
+
+                <!-- Vaquita -->
+                <a href="species/vaquita.html" class="species-card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Vaquita_%28Phocoena_sinus%29_illustration.jpg/1280px-Vaquita_%28Phocoena_sinus%29_illustration.jpg" alt="Vaquita Porpoise">
+                        <span class="status crit">CR</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Vaquita</h3>
+                        <p class="sci-name">Phocoena sinus</p>
+                        <p class="population"><i class="fas fa-users"></i> 10 remaining</p>
+                    </div>
+                </a>
+
+                <!-- Snow Leopard -->
+                <a href="species/snow-leopard.html" class="species-card">
+                    <div class="card-image">
+                        <img src="https://cdn.pixabay.com/photo/2017/01/12/11/23/snow-leopard-1974570_1280.jpg" alt="Snow Leopard">
+                        <span class="status vu">VU</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Snow Leopard</h3>
+                        <p class="sci-name">Panthera uncia</p>
+                        <p class="population"><i class="fas fa-users"></i> 4,000-6,500</p>
+                    </div>
+                </a>
+
+                <!-- Black Rhino -->
+                <a href="species/black-rhino.html" class="species-card">
+                    <div class="card-image">
+                        <img src="https://cdn.pixabay.com/photo/2016/04/21/23/21/black-rhinoceros-1344845_1280.jpg" alt="Black Rhino">
+                        <span class="status crit">CR</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Black Rhino</h3>
+                        <p class="sci-name">Diceros bicornis</p>
+                        <p class="population"><i class="fas fa-users"></i> 5,630 remaining</p>
+                    </div>
+                </a>
+
+                <!-- Bornean Orangutan -->
+                <a href="species/orangutan.html" class="species-card">
+                    <div class="card-image">
+                        <img src="https://cdn.pixabay.com/photo/2014/07/30/02/04/orangutan-404827_1280.jpg" alt="Bornean Orangutan">
+                        <span class="status crit">CR</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Bornean Orangutan</h3>
+                        <p class="sci-name">Pongo pygmaeus</p>
+                        <p class="population"><i class="fas fa-users"></i> 55,000 remaining</p>
+                    </div>
+                </a>
+
+                <!-- Hawksbill Turtle -->
+                <a href="species/hawksbill-turtle.html" class="species-card">
+                    <div class="card-image">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/29/08/24/animal-1868439_1280.jpg" alt="Hawksbill Turtle">
+                        <span class="status crit">CR</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Hawksbill Turtle</h3>
+                        <p class="sci-name">Eretmochelys imbricata</p>
+                        <p class="population"><i class="fas fa-users"></i> 23,000 nesting females</p>
+                    </div>
+                </a>
             </div>
         </div>
-
-        <!-- PHOTO GALLERY - 12+ IMAGES -->
-        <section class="photo-gallery">
-            <h2><i class="fas fa-camera"></i> Photo Gallery (12 images)</h2>
-            <div class="gallery-grid">
-                <img src="https://images.pexels.com/photos/751686/pexels-photo-751686.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Amur Leopard 1">
-                <img src="https://images.pexels.com/photos/69372/pexels-photo-69372.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Amur Leopard 2">
-                <img src="https://images.pexels.com/photos/631292/pexels-photo-631292.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Amur Leopard 3">
-                <img src="https://images.pexels.com/photos/158109/pexels-photo-158109.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Amur Leopard 4">
-                <img src="https://images.pexels.com/photos/750357/pexels-photo-750357.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Amur Leopard 5">
-                <img src="https://images.pexels.com/photos/326875/pexels-photo-326875.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Amur Leopard 6">
-                <img src="https://images.pexels.com/photos/33045/lion-wild-africa-african.jpg?auto=compress&cs=tinysrgb&w=600" alt="Amur Leopard 7">
-                <img src="https://images.pexels.com/photos/33252/pexels-photo-33252.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Amur Leopard 8">
-                <img src="https://images.pexels.com/photos/36587/african-lion-panthera-leo-male-lion.jpg?auto=compress&cs=tinysrgb&w=600" alt="Amur Leopard 9">
-                <img src="https://images.pexels.com/photos/416980/pexels-photo-416980.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Amur Leopard 10">
-                <img src="https://images.pexels.com/photos/744887/pexels-photo-744887.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Amur Leopard 11">
-                <img src="https://images.pexels.com/photos/417046/pexels-photo-417046.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Amur Leopard 12">
-            </div>
-        </section>
-
-        <!-- THREATS SECTION -->
-        <section class="threats-detail">
-            <h2><i class="fas fa-exclamation-triangle"></i> Major Threats</h2>
-            <div class="threat-list">
-                <div class="threat-item">
-                    <i class="fas fa-tree"></i>
-                    <h3>Habitat Loss</h3>
-                    <p>Logging and development</p>
-                </div>
-                <div class="threat-item">
-                    <i class="fas fa-gun"></i>
-                    <h3>Poaching</h3>
-                    <p>For fur and bones</p>
-                </div>
-                <div class="threat-item">
-                    <i class="fas fa-utensils"></i>
-                    <h3>Prey Scarcity</h3>
-                    <p>Declining deer populations</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONSERVATION -->
-        <section class="conservation">
-            <h2><i class="fas fa-heart"></i> Conservation Efforts</h2>
-            <p>The Amur Leopard population has grown from 35 to 100+ thanks to:</p>
-            <div class="org-list">
-                <span>Anti-poaching patrols</span>
-                <span>Habitat corridors</span>
-                <span>WWF Russia</span>
-                <span>Amur Leopard Center</span>
-            </div>
-        </section>
-    </main>
+    </section>
 
     <footer class="footer">
-        <p>&copy; 2025 WILDSAFE. Educational practice project.</p>
+        <div class="container">
+            <p>&copy; 2025 WILDSAFE. All images from Pixabay/Wikimedia Commons. Educational practice project.</p>
+        </div>
     </footer>
 </body>
 </html>
